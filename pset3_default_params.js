@@ -1,6 +1,6 @@
 /*
     THE PURPOSE OF THESE PROBLEMS ARE TO FAMILIARIZE YOURSELF WITH
-    JS DEFAULT PARAMATER FEATUER OF FUNCTIONS
+    JS DEFAULT PARAMATER FEATURE OF FUNCTIONS
 */
 
 /*
@@ -11,6 +11,12 @@
     use a default parameter for the middleName, set it to ""
 */
 
+function getFullName(firstName, lastName, middleName = ""){
+    return `${firstName} ${middleName} ${lastName}`;
+}
+//testing testing//
+console.log(getFullName("Cindy", "Last"), "Cindy  Last");
+console.log(getFullName("qiu", "chen", "y."), "qiu y. chen");
 
 /*
     PROBLEM 2:
@@ -21,6 +27,15 @@
     Take a param that represents F. By default this should be 32
 */
 
+function fahrenheitToCelsius( F = 32 ) {
+    return (F - 32) * 5 / 9;
+}
+
+//testing testing//
+console.log(fahrenheitToCelsius(), 0);
+console.log(fahrenheitToCelsius("thirty-two"), "NaN")
+console.log(fahrenheitToCelsius(32), 0);
+console.log(fahrenheitToCelsius(212), 100);
 
 /*
     PROBLEM 3:
@@ -33,6 +48,14 @@
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
+function ageInNumYears(ageNow = 1, numYears = 0) {
+    return ageNow + numYears;
+}
+//testing testing//
+console.log(ageInNumYears(1), 1);
+console.log(ageInNumYears(2), 2);
+console.log(ageInNumYears(20, 10), 30);
+console.log(ageInNumYears(5,10), 15);
 
 /*
     PROBLEM 4:
