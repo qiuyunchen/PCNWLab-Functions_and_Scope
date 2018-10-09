@@ -48,7 +48,7 @@ console.log(fahrenheitToCelsius(212), 100);
     should return a number that tells you how old you'll be in numYears
     ageNow and numYears should have default params
 */
-function ageInNumYears(ageNow = 1, numYears = 0) {
+function ageInNumYears(ageNow = 0, numYears = 0) {
     return ageNow + numYears;
 }
 //testing testing//
@@ -56,6 +56,7 @@ console.log(ageInNumYears(1), 1);
 console.log(ageInNumYears(2), 2);
 console.log(ageInNumYears(20, 10), 30);
 console.log(ageInNumYears(5,10), 15);
+console.log(ageInNumYears(), 0);
 
 /*
     PROBLEM 4:
