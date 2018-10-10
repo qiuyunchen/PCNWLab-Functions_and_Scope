@@ -82,7 +82,21 @@ console.log(ageInNumYears(), 0);
     (red text in console)
     
 */
+function missingParam(paramName){
+    console.log(`${paramName} is not set!`)
+    return paramName = 0;
+}
 
+function addTwoNumsBetter(a = missingParam("a"), b = missingParam("b")) {
+    return a + b;
+}
+
+//testing testing//
+console.log(addTwoNumsBetter(1, 5), 6);
+console.log(addTwoNumsBetter(10, 1), 11);
+console.log(addTwoNumsBetter(99), "b is not set!", 99);
+console.log(addTwoNumsBetter(), "a is not set!", "b is not set!", 0);
+console.log(addTwoNumsBetter("high","five"), "high"+"five");
 
 
 
