@@ -13,15 +13,15 @@
         Write a function that takes THREE params: a, b, c
         return the remainder of the sum of a,b,c divided by 3
 */ 
-function remainderF1(a, b, c) {
+function remainderF1(a = 0, b = 0, c =0) {
     return (a + b + c) % 3;
 }
 
-const remainderF2 = function(a, b, c) {
+const remainderF2 = function(a = 0, b = 0, c =0) {
     return (a + b + c) % 3;
 }
 
-const remainderF3 = (a, b, c) => {
+const remainderF3 = (a = 0, b = 0, c =0) => {
     return (a + b + c) % 3;
 }
 
